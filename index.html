@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Set height to 100% for body and html to enable the background image to cover the whole page */
+        body, html {
+            height: 100%;
+        }
+
+        /* Background image */
+        .bgimg {
+            background-image: url('/w3images/forestbridge.jpg'); /* Replace with your desired image URL */
+            height: 100%; /* Full-screen */
+            background-position: center; /* Center the background image */
+            background-size: cover; /* Scale and zoom in the image */
+            position: relative; /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+            color: white; /* Add a white text color to all elements inside the .bgimg container */
+            font-family: "Courier New", Courier, monospace; /* Set the font family */
+            font-size: 25px; /* Set the font size to 25 pixels */
+        }
+
+        /* Position text in the top-left corner */
+        .topleft {
+            position: absolute;
+            top: 0;
+            left: 16px;
+        }
+
+        /* Position text in the bottom-left corner */
+        .bottomleft {
+            position: absolute;
+            bottom: 0;
+            left: 16px;
+        }
+
+        /* Position text in the middle */
+        .middle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        /* Style the <hr> element */
+        hr {
+            margin: auto;
+            width: 40%;
+        }
+    </style>
+</head>
+<body>
+
+<div >
+    <div class="topleft">
+        <p></p>
+    </div>
+    <div class="middle">
+        <h1>COMING SOON</h1>
+        <hr>
+        <p>NaN days</p> <!-- You can customize this countdown -->
+    </div>
+    <div class="bottomleft">
+        <p></p> <!-- Add any additional information here -->
+    </div>
+</div>
+
+</body>
+</html>
